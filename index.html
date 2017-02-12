@@ -15,6 +15,9 @@
   </head>
   <body>
     <div id="root">
+      <div class="container">
+
+
     <ul>
       <li v-for="name in names" v-text="name"></li>
     </ul>
@@ -30,12 +33,18 @@
 
     <button class="btn"  @click="addField()">+ Add</button>
 
-    <task></task>
+    <task-list></task-list>
+
+    <jumbo title="Je suis le titre" message="Il fau qu'n jour on retoruve la liberté"></jumbo>
+
+      <hr>
+
+
+      <modal v-if="seeme" modalid="id1"  buttontext="Je suis le Boutton N°1" modaltext="Je suis les texte de modal N°1"></modal>
 
 
 
-
-
+  </div>
 
 
     </div>
