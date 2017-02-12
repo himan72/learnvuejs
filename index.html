@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <title></title>
+
+    <!--[if lt IE 9]>
+      <script src="https://cdn.jsdelivr.net/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div id="root">
+    <ul>
+      <li v-for="name in names" v-text="name"></li>
+    </ul>
+
+    <input type="text" v-model="newName" @keyup.enter="addName()">
+    <button @click='addName()'>Add Name</button> <br><hr>
+
+
+    <button class="alert 1" v-bind:disabled="status" @click="onClick()">I am Disabled</button><br><hr>
+
+    <button class="btn" :class="{'btn-danger': danger}" v-text="ttt" @click="onClick2()"></button><br><hr>
+
+
+    <button class="btn"  @click="addField()">+ Add</button>
+
+    <task></task>
+
+
+
+
+
+
+
+    </div>
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/vue@2.1.10/dist/vue.js"></script>
+    <script src="main.js">
+
+    </script>
+  </body>
+</html>
